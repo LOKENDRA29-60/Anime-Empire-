@@ -43,7 +43,7 @@
     <h1>Anime List</h1>
     <div class="anime-container">
         <div class="anime-card">
-            <img src="images/naruto.jpg" alt="Naruto">
+            <img src=https://www.pinterest.com/pin/naruto-shippuden-group-poster--895371969642507221/alt="Naruto">
             <h3>Naruto</h3>
             <a class="download-btn" href="images/naruto.jpg" download>Download Image</a>
         </div>
@@ -58,7 +58,7 @@
             <a class="download-btn" href="images/demon_slayer.jpg" download>Download Image</a>
         </div>
         <div class="anime-card">
-            <img src="images/jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
+            <img src="" alt="Jujutsu Kaisen">
             <h3>Jujutsu Kaisen</h3>
             <a class="download-btn" href="images/jujutsu_kaisen.jpg" download>Download Image</a>
         </div>
