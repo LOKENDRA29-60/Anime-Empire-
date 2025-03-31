@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime List - Anime Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+        .anime-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .anime-card {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .anime-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .download-btn {
+            display: block;
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #ff4500;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anime List</h1>
+    <div class="anime-container">
+        <div class="anime-card">
+            <img src="images/naruto.jpg" alt="Naruto">
+            <h3>Naruto</h3>
+            <a class="download-btn" href="images/naruto.jpg" download>Download Image</a>
+        </div>
+        <div class="anime-card">
+            <img src="images/naruto_shippuden.jpg" alt="Naruto Shippuden">
+            <h3>Naruto Shippuden</h3>
+            <a class="download-btn" href="images/naruto_shippuden.jpg" download>Download Image</a>
+        </div>
+        <div class="anime-card">
+            <img src="images/demon_slayer.jpg" alt="Demon Slayer">
+            <h3>Demon Slayer</h3>
+            <a class="download-btn" href="images/demon_slayer.jpg" download>Download Image</a>
+        </div>
+        <div class="anime-card">
+            <img src="images/jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
+            <h3>Jujutsu Kaisen</h3>
+            <a class="download-btn" href="images/jujutsu_kaisen.jpg" download>Download Image</a>
+        </div>
+    </div>
+</body>
+</html>
