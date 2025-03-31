@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,24 +44,24 @@
     <h1>Anime List</h1>
     <div class="anime-container">
         <div class="anime-card">
-            <img src=https://www.pinterest.com/pin/naruto-shippuden-group-poster--895371969642507221/alt="Naruto">
+            <img src="https://i.pinimg.com/originals/81/25/3c/81253c07255903b60173c2ed485d268d.jpg" alt="Naruto">
             <h3>Naruto</h3>
-            <a class="download-btn" href="images/naruto.jpg" download>Download Image</a>
+            <a class="download-btn" href="https://i.pinimg.com/originals/81/25/3c/81253c07255903b60173c2ed485d268d.jpg" download>Download Image</a>
         </div>
         <div class="anime-card">
-            <img src="images/naruto_shippuden.jpg" alt="Naruto Shippuden">
+            <img src="https://i.pinimg.com/736x/8e/3c/53/8e3c5303c623992b45151b72e90c20f1.jpg" alt="Naruto Shippuden">
             <h3>Naruto Shippuden</h3>
-            <a class="download-btn" href="images/naruto_shippuden.jpg" download>Download Image</a>
+            <a class="download-btn" href="https://i.pinimg.com/736x/8e/3c/53/8e3c5303c623992b45151b72e90c20f1.jpg" download>Download Image</a>
         </div>
         <div class="anime-card">
-            <img src="images/demon_slayer.jpg" alt="Demon Slayer">
+            <img src="https://i.pinimg.com/originals/20/94/a3/2094a37f5d4a13f64c632847c1a7d65f.jpg" alt="Demon Slayer">
             <h3>Demon Slayer</h3>
-            <a class="download-btn" href="images/demon_slayer.jpg" download>Download Image</a>
+            <a class="download-btn" href="https://i.pinimg.com/originals/20/94/a3/2094a37f5d4a13f64c632847c1a7d65f.jpg" download>Download Image</a>
         </div>
         <div class="anime-card">
-            <img src="" alt="Jujutsu Kaisen">
+            <img src="https://i.pinimg.com/736x/8f/c9/89/8fc9892c9085810b42795e1c070f8083.jpg" alt="Jujutsu Kaisen">
             <h3>Jujutsu Kaisen</h3>
-            <a class="download-btn" href="images/jujutsu_kaisen.jpg" download>Download Image</a>
+            <a class="download-btn" href="https://i.pinimg.com/736x/8f/c9/89/8fc9892c9085810b42795e1c070f8083.jpg" download>Download Image</a>
         </div>
     </div>
 </body>
