@@ -1,28 +1,116 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header & Navigation */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Anime List Section */
+.anime-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
 .anime-item {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 15px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .anime-item img {
-    width: 200px;
-    height: 300px;
-    border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.anime-item h2 {
+  margin-top: 10px;
+}
+
+.anime-item p {
+  margin: 10px 0;
 }
 
 .watch-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: orange;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
+  background-color: #ff6f61;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+  transition: background-color 0.3s ease;
 }
 
+.watch-btn:hover {
+  background-color: #ff3b2e;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.story {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.story h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #222;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
