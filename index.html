@@ -1,91 +1,58 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Hub - Naruto & Best Anime</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Anime Hub</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Naruto</a></li>
-                <li><a href="#">Top Anime</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Anime Pictures</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="anime-list">
-            <div class="anime-item">
-                <img src="https://i.pinimg.com/originals/1a/b2/3c/1ab23c9b4dc59c6f28a45f8f248bfb5d.jpg" alt="Naruto">
-                <h2>Naruto</h2>
-                <p>Watch all episodes of Naruto here!</p>
-                <p>Season: 1 | Episode: 5</p> 
-                <a href="watch.html" class="watch-btn">Watch Now</a>
-             <a href="watch.html" class="watch-btn" onclick="nextPage()">Watch Now</a>
-
-<script>
-function nextPage() {
-    window.location.href = "watch.html";
-}
-</script>
-             <!DOCTYPE html>
-<html lang="hi">
-<head>
   <meta charset="UTF-8">
-  <title>चुनें विकल्प</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Hub - Naruto & Best Anime</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Season और Episode चुनें</h1>
-  
-  <div>
-    <label for="season">Season चुनें:</label>
-    <select id="season" name="season">
-      <option value="">--Season चुनें--</option>
-      <option value="season1">Season 1</option>
-      <option value="season2">Season 2</option>
-      <!-- अतिरिक्त Seasons जोड़ें -->
-    </select>
-  </div>
-  
-  <div>
-    <label for="episode">Episode चुनें:</label>
-    <select id="episode" name="episode">
-      <option value="">--Episode चुनें--</option>
-      <option value="episode1">Episode 1</option>
-      <option value="episode2">Episode 2</option>
-      <!-- अतिरिक्त Episodes जोड़ें -->
-    </select>
-  </div>
-</body>
-</html>
-                
-            </div>
+  <header>
+    <h1>Anime Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Naruto</a></li>
+        <li><a href="#">Top Anime</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Anime Pictures</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="anime-item">
-                <img src="https://i.pinimg.com/originals/a2/7b/6b/a27b6b1db087e1dbe1610ddba2e46c67.jpg" alt="Demon Slayer">
-                <h2>Demon Slayer</h2>
-                <p>Experience the intense battles against the Demons.</p>
-                <a href="#" class="watch-btn">Watch Now</a>
-            </div>
+  <main>
+    <section class="anime-list">
+      <!-- Naruto Item with Season & Episode Options -->
+      <div class="anime-item">
+        <img src="https://i.pinimg.com/originals/1a/b2/3c/1ab23c9b4dc59c6f28a45f8f248bfb5d.jpg" alt="Naruto">
+        <h2>Naruto</h2>
+        <p>Watch all episodes of Naruto here!</p>
+        <p>Season: 1 | Episode: 5</p> 
+        <!-- बटन जिनके द्वारा अलग-अलग पेज पर नेविगेट किया जाएगा -->
+        <button onclick="window.location.href='season.html'">Select Season</button>
+        <button onclick="window.location.href='episode.html'">Select Episode</button>
+      </div>
 
-            <div class="anime-item">
-                <img src="https://i.pinimg.com/originals/ef/07/45/ef07458ebfc6cfda9a0b1d8c3344e8c5.jpg" alt="Jujutsu Kaisen">
-                <h2>Jujutsu Kaisen</h2>
-                <p>The Bloody fight between Curses and Sorcerers.</p>
-                <a href="#" class="watch-btn">Watch Now</a>
-            </div>
-        </section>
-    </main>
+      <!-- Demon Slayer Item -->
+      <div class="anime-item">
+        <img src="https://i.pinimg.com/originals/a2/7b/6b/a27b6b1db087e1dbe1610ddba2e46c67.jpg" alt="Demon Slayer">
+        <h2>Demon Slayer</h2>
+        <p>Experience the intense battles against the Demons.</p>
+        <button onclick="window.location.href='demon-slayer.html'">Watch Now</button>
+      </div>
 
-    <footer>
-        <p>&copy; 2025 Anime Hub. All rights reserved.</p>
-    </footer>
+      <!-- Jujutsu Kaisen Item -->
+      <div class="anime-item">
+        <img src="https://i.pinimg.com/originals/ef/07/45/ef07458ebfc6cfda9a0b1d8c3344e8c5.jpg" alt="Jujutsu Kaisen">
+        <h2>Jujutsu Kaisen</h2>
+        <p>The bloody fight between Curses and Sorcerers.</p>
+        <button onclick="window.location.href='jujutsu-kaisen.html'">Watch Now</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Anime Hub. All rights reserved.</p>
+  </footer>
 </body>
 </html>
