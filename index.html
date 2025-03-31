@@ -1,55 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anime Hub - Naruto Shippuden, JJK & Demon Slayer</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Anime Hub</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="naruto-shippuden.html">Naruto Shippuden</a></li>
-        <li><a href="jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
-        <li><a href="demon-slayer.html">Demon Slayer</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <h1>Anime Hub</h1>
+        <input type="text" id="search" placeholder="Search Anime...">
+    </header>
+    <main>
+        <div id="anime-list"></div>
+    </main><style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1a1a2e;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #0f3460;
+        padding: 20px;
+    }
+    #search {
+        padding: 10px;
+        width: 80%;
+        max-width: 400px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    #anime-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+    .anime-card {
+        background: #16213e;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 200px;
+        text-align: center;
+    }
+    .anime-card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .anime-card button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #e94560;
+        color: white;
+        cursor: pointer;
+    }
+</style>
 
-  <main>
-    <section class="anime-list">
-      <!-- Naruto Shippuden Item -->
-      <div class="anime-item">
-        <img src="https://pixabay.com/illustrations/ai-generated-naruto-shippuden-anime-8231894/" alt="Naruto Shippuden">
-        <h2>Naruto Shippuden</h2>
-        <p>Watch all episodes of Naruto Shippuden!</p>
-        <button onclick="window.location.href='naruto-shippuden.html'">Watch Now</button>
-      </div>
+<script>
+    const animeList = [
+        { title: "Naruto", image: "https://upload.wikimedia.org/wikipedia/en/7/7f/NarutoUzumaki.png", link: "naruto.html" },
+        { title: "Naruto Shippuden", image: "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Naruto_Shippuden_Logo.svg/1920px-Naruto_Shippuden_Logo.svg.png", link: "shippuden.html" },
+        { title: "Jujutsu Kaisen", image: "https://upload.wikimedia.org/wikipedia/en/5/5a/Jujutsu_kaisen.jpg", link: "jjk.html" },
+        { title: "Demon Slayer", image: "https://upload.wikimedia.org/wikipedia/en/8/89/Kimetsu_no_Yaiba_Key_Visual.jpg", link: "demonslayer.html" },
+        { title: "Free Fire", image: "https://upload.wikimedia.org/wikipedia/en/3/3f/Garena_Free_Fire_logo.png", link: "freefire.html" },
+        { title: "BGMI", image: "https://upload.wikimedia.org/wikipedia/en/6/61/BGMI_Logo.png", link: "bgmi.html" }
+    ];
 
-      <!-- Jujutsu Kaisen Item -->
-      <div class="anime-item">
-        <img src="https://wallpapercave.com/wp/wp7331246.jpg" alt="Jujutsu Kaisen">
-        <h2>Jujutsu Kaisen</h2>
-        <p>Watch all episodes of Jujutsu Kaisen!</p>
-        <button onclick="window.location.href='jujutsu-kaisen.html'">Watch Now</button>
-      </div>
+    function displayAnime(list) {
+        const container = document.getElementById("anime-list");
+        container.innerHTML = "";
+        list.forEach(anime => {
+            const card = document.createElement("div");
+            card.className = "anime-card";
+            card.innerHTML = `
+                <img src="${anime.image}" alt="${anime.title}">
+                <h3>${anime.title}</h3>
+                <button onclick="location.href='${anime.link}'">View More</button>
+            `;
+            container.appendChild(card);
+        });
+    }
 
-      <!-- Demon Slayer Item -->
-      <div class="anime-item">
-        <img src="https://en.m.wikipedia.org/wiki/File:Kimetsu_no_Yaiba_Mugen_Ressha_Hen_Poster.jpg" alt="Demon Slayer">
-        <h2>Demon Slayer</h2>
-        <p>Experience the intense battles of Demon Slayer.</p>
-        <button onclick="window.location.href='demon-slayer.html'">Watch Now</button>
-      </div>
-    </section>
-  </main>
+    document.getElementById("search").addEventListener("input", function() {
+        const query = this.value.toLowerCase();
+        const filtered = animeList.filter(anime => anime.title.toLowerCase().includes(query));
+        displayAnime(filtered);
+    });
 
-  <footer>
-    <p>&copy; 2025 Anime Hub. All rights reserved.</p>
-  </footer>
+    displayAnime(animeList);
+</script>
+
 </body>
-</html>
+</html><!-- Naruto Page --><!DOCTYPE html><html>
+<head>
+    <title>Naruto</title>
+</head>
+<body>
+    <h1>Naruto</h1>
+    <p>One of the most popular anime series following the journey of Naruto Uzumaki.</p>
+    <a href="index.html">Back to Home</a>
+</body>
+</html><!-- Add similar pages for other anime and games -->
