@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Slayer - Story & Episodes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+    </header>
+    <main>
+        <section class="story">
+            <h2>Story</h2>
+            <p>
+                Demon Slayer follows Tanjiro Kamado, a kind-hearted boy who becomes a demon slayer 
+                after his family is slaughtered and his sister Nezuko is turned into a demon. 
+                He embarks on a dangerous journey to find a cure and avenge his family.
+            </p>
+        </section><section class="episodes">
+        <h2>Episodes</h2>
+        <div id="episode-list"></div>
+    </section>
+</main>
+
+<script>
+    const episodes = [
+        { number: 1, title: "Cruelty", link: "watch.html?ep=1" },
+        { number: 2, title: "Trainer Sakonji Urokodaki", link: "watch.html?ep=2" },
+        { number: 3, title: "Sabito and Makomo", link: "watch.html?ep=3" },
+        { number: 4, title: "Final Selection", link: "watch.html?ep=4" }
+    ];
+
+    function displayEpisodes() {
+        const container = document.getElementById("episode-list");
+        episodes.forEach(ep => {
+            const epDiv = document.createElement("div");
+            epDiv.className = "episode";
+            epDiv.innerHTML = `
+                <span>Episode ${ep.number}: ${ep.title}</span>
+                <button onclick="location.href='${ep.link}'">▶ Watch</button>
+            `;
+            container.appendChild(epDiv);
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", displayEpisodes);
+</script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1a1a2e;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+    }
+    header {
+        background-color: #0f3460;
+        padding: 20px;
+        font-size: 24px;
+    }
+    .story {
+        margin: 20px 0;
+        padding: 20px;
+        background: #16213e;
+        border-radius: 10px;
+    }
+    .episodes {
+        margin-top: 20px;
+    }
+    .episode {
+        background: #16213e;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .episode button {
+        background-color: #e94560;
+        border: none;
+        padding: 8px 15px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+
+</body>
+</html>
